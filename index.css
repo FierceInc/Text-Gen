@@ -10,7 +10,7 @@ body{
 }
 h1{
     font-family: Poppins;
-    font-size: min(10vw, 4.84rem);
+    font-size: min(10vw, 5.84rem);
 }
 h1 span{
     color: #2e00fa;
