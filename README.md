@@ -41,3 +41,5 @@ git push -u origin YOUR_FAVOURITE_BRANCH_NAME - the name you used at ``` no. 2 a
 ```
 
 Well done !!! 
+
+Don't forget to then submit a pull request.
