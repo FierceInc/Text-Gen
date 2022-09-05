@@ -26,3 +26,4 @@ yarn-error.log*
 file.txt
 .env
 >>>>>>> 6da53f203d493622ec75a0c093ade872a1ebab41
+./index.js
