@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png">
+    <link rel="manifest" href="public/site.webmanifest">
+
+    <meta name="description" content="Generate dummy text and give life to your designs. Not just dummy text but text to help you draw inspiration."/>
+    <meta name="keywords" content="Web Development, Web Developer, Developer, Design, Web, JavaScript, C, Blog, Sizo Develops Blog, Sizo Mhlongo,Generator, Text"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@SIZO_Dev" />
+    <meta name="twitter:creator" content="@SIZO_Dev"/>
+    <meta name="twitter:title" content="Dummy Text Generator"/>
+    <meta name="twitter:description" content="Generate dummy text and give life to your designs. Not just dummy text but text to help you draw inspiration."/>
+    <meta name="twitter:image" content="https://text-g.netlify.app/public/Shot.png"/>
+
+    <meta property="og:url" content="https://text-g.netlify.app/"/>
+    <meta property="og:title" content="Dummy Text Generator"/>
+    <meta property="og:description" content="Generate dummy text and give life to your designs. Not just dummy text but text to help you draw inspiration."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://text-g.netlify.app/public/Shot.png"/>
+    <meta property="og:image:type" content="image/png"/>
+    <meta property="og:site_name" content="Text Generator" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image:alt" content="Text Gen Screenshot" />
+    <meta property="og:image:width" content="300"/>
+    <meta property="og:image:height" content="300"/>
+    <link rel="canonical" href="https://text-g.netlify.app/"/>
+    <title>Dummy Text Generator</title>
+</head>
+<body>
+
+    <div class="Container">
+        <h1>Generate dummy text <span>for your designs.</span></h1>
+        <p>Use real text to help you draw inspiration for your work.</p>
+        <form action="">
+            <label for="numberofwords">Number Of Words</label>
+            <input id="NumWords" type="number" min="3" value="3" name="numberofwords" id="numberOfWords">
+        </form>
+        <button onclick="previewFile()">Generate</button>
+    
+        <div class="TextCont">
+            <div class="Copy" id="Copy"><i class="bi bi-clipboard"></i></div>
+            <p id="Text">Generate the text you need.</p>
+        </div>
+    </div>
+    <script defer src="index.js"></script>
+    
+</body>
+</html>
