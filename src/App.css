@@ -1,38 +1,268 @@
-.App {
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+*{
+    background: #02051f;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+.ImageCont{
+    width: min(90vw, 794px);
+    height: min(40vw, 313px);
+    margin:20px auto;
+}
+.ImageCont i {
+    font-size: 30px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.Container{
   text-align: center;
+  margin:10px auto;
+  border-radius: 5px;
+  position: relative;
+  width: min(90vw, 1440px);
+  
+}
+h1{
+    font-family: Poppins;
+    font-size: min(10vw, 6.34rem);
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+h1 span{
+    color: #542efa;
+}
+p{
+    font-family: Manrope;
+    font-size: min(4vw, 1.3rem);
+    width: 90%;
+    text-align: center;
+    margin:10px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.Categories{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20rem);
+    justify-content: center;
+    align-items: center;
+    width: min(80vw, 1165px);
+    position: relative;
+    column-gap: 20px;
+    row-gap: 60px;
+    margin: auto;
+
+}
+.Category{
+    width: min(80vw, 300px);
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: start;
+    background:#0059df;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.CTA{
+    position: absolute;
+    animation: shake 0.5s ease-in-out infinite;
+    animation-direction:alternate ;
+    right: -40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes shake {
+    from{
+        top: -5px;
+    }
+    to{
+        top: 10px;
+    }
+
+}
+.Category h3{
+    text-align: left;
+    font-size: 25px;
+    font-family: Manrope;
+    margin-bottom: 30px;
+    background: transparent;
+    color: white;
+}
+.cat{
+    width: 100%;
+    padding: 0;
+    left: 0;
+    top: 85%;
+    border-radius: 10px;
+    z-index: 100;
+    text-align: left;
+    overflow-y: hidden;
+    position: absolute;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;
+}
+.Container h3{
+    font-size: 25px;
+    font-family: Manrope;
+    background: transparent;
+    cursor: pointer;
+    width: fit-content;
+    margin:30px auto;
+    position: relative;
+}
+
+.cat label, input{
+    background: transparent;
+    font-size: 15px;
+    font-family: Manrope;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    color: white;
+    cursor: pointer;
+}
+button{
+    background-color:  #2e00fa;
+    color: white;
+    border: none;
+    font-family: Manrope;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 100%;
+    cursor: pointer;
+    margin-top: 30px;
+}
+button:hover{
+    background: rgb(80, 33, 250);
+}
+
+button:disabled{
+    background-color: #b9b9b9;
+    cursor:not-allowed;
+}
+button:disabled:hover{
+    background-color: #cccccc;
+}
+.numWords {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+.numWords> div > h3{
+
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 25px;
+    margin: 10px auto;
+    cursor: unset;
+}
+.numWords> div > span > i {
+    font-size: 20px;
+}
+
+.TextCont{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 30rem);
+    width: 100%;
+    column-gap: 50px;
+    row-gap: 20px;
+    font-family: Manrope;
+    justify-content: center;
+    margin: 60px auto;
+}
+.Copy{
+    border: none;
+    font-family: Manrope;
+    border-radius: 5px;
+    position: relative;
+    font-size: 80%;
+    padding: 15px;
+    cursor: pointer;
+    width: min(90vw, 500px);
+    border: 1px solid;
+    margin:0 auto;
+}
+.Copy p{
+    background-color: transparent;
+    text-align: justify;
+    margin: 0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.Copy i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 20px;
+}
+  .Category .inputs {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
   }
-}
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .checkmark {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border-radius: 50%;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* On mouse-over, add a grey background color */
+  .Category:hover .inputs ~ .checkmark {
+    border: 1px solid #fff;
   }
-}
+  
+  /* When the radio button is checked, add a blue background */
+  .Category .inputs:checked ~ .checkmark {
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .Category .inputs:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .Category .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+  }
